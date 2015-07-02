@@ -48,10 +48,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/NikithaShravan/Documents/Summer 2015/Road-Crack-Detection-master/BOW-Mask/Image-Graph-Segmentation/Ground-Plane-Mask/gp-mask-engine"
+CMAKE_SOURCE_DIR = "/Users/NikithaShravan/Documents/Summer 2015/gp-mask"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/NikithaShravan/Documents/Summer 2015/Road-Crack-Detection-master/BOW-Mask/Image-Graph-Segmentation/Ground-Plane-Mask/gp-mask-engine"
+CMAKE_BINARY_DIR = "/Users/NikithaShravan/Documents/Summer 2015/gp-mask"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NikithaShravan/Documents/Summer 2015/Road-Crack-Detection-master/BOW-Mask/Image-Graph-Segmentation/Ground-Plane-Mask/gp-mask-engine/CMakeFiles" "/Users/NikithaShravan/Documents/Summer 2015/Road-Crack-Detection-master/BOW-Mask/Image-Graph-Segmentation/Ground-Plane-Mask/gp-mask-engine/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NikithaShravan/Documents/Summer 2015/gp-mask/CMakeFiles" "/Users/NikithaShravan/Documents/Summer 2015/gp-mask/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NikithaShravan/Documents/Summer 2015/Road-Crack-Detection-master/BOW-Mask/Image-Graph-Segmentation/Ground-Plane-Mask/gp-mask-engine/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NikithaShravan/Documents/Summer 2015/gp-mask/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

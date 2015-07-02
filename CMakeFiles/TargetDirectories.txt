@@ -1,1 +1,0 @@
-/Users/NikithaShravan/Documents/Summer 2015/Road-Crack-Detection-master/BOW-Mask/Image-Graph-Segmentation/Ground-Plane-Mask/gp-mask-engine/CMakeFiles/gp-mask.dir

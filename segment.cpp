@@ -108,6 +108,8 @@ int main(int argc, char **argv) {
 
   cv::Mat inp = imread(argv[4]);
   resize(inp, inp, Size(0,0),0.25,0.25);  
+
+//  erode(inp, inp, getStructuringElement(MORPH_ELLIPSE, Size(3,3), Point(0,0)));
   imshow("input",inp);
 
   image<rgb> *input = matToimg(inp); 
