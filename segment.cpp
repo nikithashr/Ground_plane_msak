@@ -108,8 +108,6 @@ int main(int argc, char **argv) {
 
   cv::Mat inp = imread(argv[4]);
   resize(inp, inp, Size(0,0),0.25,0.25);  
-
-//  erode(inp, inp, getStructuringElement(MORPH_ELLIPSE, Size(3,3), Point(0,0)));
   imshow("input",inp);
 
   image<rgb> *input = matToimg(inp); 
@@ -124,6 +122,9 @@ int main(int argc, char **argv) {
   cout << "Time taken: " << (float)(endTime - startTime)/CLOCKS_PER_SEC << endl;
   Mat outImg  = imgToMat(seg);
   resize(outImg, outImg, Size(0,0),2.0,2.0, INTER_LANCZOS4);  
+  erode(outImg, outImg, getStructuringElement(MORPH_ELLIPSE, Size(50,50), Point(0,0)));
+ // dilate(outImg, outImg, Mat(), Point(-1, -1), 2, 1, 1);
+  dilate(outImg, outImg, getStructuringElement(MORPH_ELLIPSE, Size(50,50), Point(0,0)));
   Mat grayImg(outImg.rows,outImg.cols, CV_8UC1);
 
   imshow("colour_output", outImg);
